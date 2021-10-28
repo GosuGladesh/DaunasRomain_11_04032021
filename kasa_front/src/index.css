@@ -1,13 +1,60 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav a {
+  color: #FF6060;
+  font-size: 24pt;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nav img {
+  /* .LOGO */
+  position: absolute;
+  left: 0%;
+  right: 83.04%;
+  top: 0%;
+  bottom: 0%;
+  /* Vector */
+  position: absolute;
+  left: 0%;
+  right: 95.62%;
+  top: 0%;
+  bottom: 8.45%;
+  background: #FF6060;
+  /* Vector */
+  position: absolute;
+  left: 9.58%;
+  right: 87.24%;
+  top: 21.53%;
+  bottom: 7.89%;
+  background: #FF6060;
+  /* Vector */
+  position: absolute;
+  left: 13.66%;
+  right: 83.04%;
+  top: 21.25%;
+  bottom: 7.9%;
+  background: #FF6060;
+  /* Group */
+  position: absolute;
+  left: 4.86%;
+  right: 91.43%;
+  top: 21.53%;
+  bottom: 0%;
+  /* Vector */
+  position: absolute;
+  left: 7.38%;
+  right: 92.19%;
+  top: 68.66%;
+  bottom: 8.17%;
+  background: #FF6060;
+  /* Vector */
+  position: absolute;
+  left: 4.86%;
+  right: 91.43%;
+  top: 21.53%;
+  bottom: 0%;
+  background: #FF6060;
 }
+
+/*# sourceMappingURL=index.css.map */

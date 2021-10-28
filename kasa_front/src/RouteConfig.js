@@ -1,4 +1,6 @@
 import React from "react";
+import Home from "./Components/Home/Home"
+import About from "./Components/About/About"
 import {
   BrowserRouter as Router,
   Switch,
@@ -7,10 +9,14 @@ import {
 } from "react-router-dom";
 
 const routes = [
-/*
+
     {
-        path: "/sandwiches",
-        component: Sandwiches
-    }
-*/
+        path: "/",
+        component: Home
+    },
+    {
+        path: "/apropos",
+        component: About
+    },
+
 ]

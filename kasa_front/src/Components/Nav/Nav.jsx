@@ -1,16 +1,21 @@
 
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link,BrowserRouter as Router } from "react-router-dom";
 
 class Nav extends React.Component {
 
     render() {
       return (
-        <div>
+        <div class="nav">
           <img alt=""/>
-          <Link to="/"></Link>
-          <Link to="/apropos"></Link>  
+          <Router>
+             <Link to="/">Accueil</Link>
+              <Link to="/apropos">A Propos</Link> 
+          </Router>
+          
         </div>
       );
     }
   }
+
+  export default Nav;
