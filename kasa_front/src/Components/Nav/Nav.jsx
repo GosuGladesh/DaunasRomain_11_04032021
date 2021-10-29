@@ -7,7 +7,7 @@ class Nav extends React.Component {
     render() {
       return (
         <div class="nav">
-          <img alt=""/>
+          <img src="../../../public/img/LOGO.svg" alt=""/>
           <Router>
              <Link to="/">Accueil</Link>
               <Link to="/apropos">A Propos</Link> 
