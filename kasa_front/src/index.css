@@ -8,6 +8,15 @@
   text-align: center;
 }
 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+  justify-content: space-between;
+  background-color: #F6F6F6;
+  border-radius: 25px;
+}
+
 .nav {
   width: 100%;
   display: flex;
@@ -66,6 +75,23 @@
   top: 21.53%;
   bottom: 0%;
   background: #FF6060;
+}
+
+.thumbnail {
+  position: relative;
+  width: 340px;
+  height: 340px;
+  background-color: #FF6060;
+  background: linear-gradient(180deg, #FF6060 0%, #b34343 100%);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.thumbnail__title {
+  font-size: 18pt;
+  position: absolute;
+  left: 20px;
+  bottom: 30px;
+  color: white;
 }
 
 /*# sourceMappingURL=index.css.map */
