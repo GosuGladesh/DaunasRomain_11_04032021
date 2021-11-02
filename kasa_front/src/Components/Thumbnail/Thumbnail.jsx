@@ -1,12 +1,19 @@
+/* eslint-disable no-useless-constructor */
 import React from "react";
 
 class Thumbnail extends React.Component {
 
+    constructor(props) {
+      super(props);
+      this.state = {title : props.title,cover: props.cover }
+    }
+
     render() {
       return (
-        <div class="thumbnail">
-          <p class="thumbnail__title">Title</p>
-        </div>
+        <a href="" class="thumbnail">
+          <img src={this.state.cover} alt=""/>
+          <p class="thumbnail__title">{this.state.title}</p>
+        </a>
       );
     }
   }

@@ -2,9 +2,29 @@
     border-radius: 25px;
     width: 100%;
     height: 220px;
+    object-fit: cover;
+
+    @media screen and (max-width: 600px){
+        height: 111px;
+    }
 
     &__title {
         color: white;
+        font-size: 48pt;
         text-align: center;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        z-index: 4;
+
+        @media screen and (max-width: 600px){
+            font-size: 24pt;
+            text-align: left;
+        }
+    }
+    &__wrapper {
+        position: relative;
     }
 }

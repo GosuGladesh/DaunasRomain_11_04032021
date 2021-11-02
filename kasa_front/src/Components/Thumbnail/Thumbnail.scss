@@ -7,6 +7,10 @@
     border-radius: 10px;
     margin-bottom: 30px;
 
+    @media screen and (max-width: 600px){
+        width: 335px;
+        height: 255px;
+    }
     &__title {
         font-size: 18pt;
         position: absolute;
