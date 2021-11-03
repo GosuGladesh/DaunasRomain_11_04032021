@@ -9,11 +9,12 @@ class Nav extends React.Component {
       return (
         <div class="nav">
           <img src={logo} alt=""/>
+          <div>
           <Router>
              <Link to="/">Accueil</Link>
               <Link to="/apropos">A Propos</Link> 
           </Router>
-          
+          </div>
         </div>
       );
     }
