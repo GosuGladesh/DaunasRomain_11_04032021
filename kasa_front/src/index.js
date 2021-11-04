@@ -8,6 +8,7 @@ import NotFound from './Components/NotFound/NotFound'
 import Logement from './Components/Logement/Logement'
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import Footer from './Components/Footer/Footer';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -28,7 +29,7 @@ ReactDOM.render(
         </Route>
       </Switch>
     </Router>
-    
+    <Footer />
   </React.StrictMode>,
   document.getElementById('root')
 );
