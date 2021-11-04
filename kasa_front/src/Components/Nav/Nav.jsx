@@ -11,7 +11,7 @@ class Nav extends React.Component {
           <img src={logo} alt=""/>
           <div>
           <Router>
-             <Link to="/">Accueil</Link>
+              <Link to="/">Accueil</Link>
               <Link to="/apropos">A Propos</Link> 
           </Router>
           </div>
