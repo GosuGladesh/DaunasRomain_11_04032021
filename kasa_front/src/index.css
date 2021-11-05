@@ -109,10 +109,18 @@
   border-radius: 10px;
   background-color: #FF6060;
   margin: 10px;
+  min-width: 115px;
+  width: fit-content;
+  padding: 0 15px;
+  height: 25px;
+}
+.tag__container {
+  display: flex;
 }
 .tag p {
   color: white;
   text-align: center;
+  font-size: 14pt;
 }
 
 .thumbnail {
@@ -159,11 +167,40 @@
   margin: 45px;
 }
 
+.rating {
+  display: flex;
+  width: 200px;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: 1.6fr 0.4fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  gap: 0px 0px;
+  align-items: center;
+}
+.details__title {
+  color: #FF6060;
+}
+.details__location {
+  color: #FF6060;
+}
+.details__host {
+  display: flex;
+}
+.details__host__name {
+  color: #FF6060;
+}
+
 * {
   font-family: "Montserrat", sans-serif;
 }
 
 p {
+  margin: 0;
+}
+
+h1 {
   margin: 0;
 }
 

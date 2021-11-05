@@ -1,0 +1,25 @@
+.details {
+
+    display: grid; 
+    grid-template-columns: 1.6fr 0.4fr; 
+    grid-template-rows: 0.5fr 0.5fr; 
+    gap: 0px 0px; 
+    align-items: center;
+        
+    &__title {
+        color : #FF6060;
+    }
+
+    &__location {
+        color : #FF6060;
+    }
+
+    &__host {
+        
+        display: flex;
+        
+        &__name {
+            color : #FF6060;
+        }
+    }
+}

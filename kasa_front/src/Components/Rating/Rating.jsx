@@ -1,4 +1,6 @@
 import React from "react";
+import starGrey from "../../img/star_grey.svg";
+import starColor from "../../img/star_color.svg";
 
 class Rating extends React.Component {
 
@@ -9,8 +11,12 @@ class Rating extends React.Component {
 
     render() {
       return (
-          <div>
-               
+          <div className="rating">
+               <img src={starGrey} alt =""/>
+               <img src={starGrey} alt =""/>
+               <img src={starGrey} alt =""/>
+               <img src={starGrey} alt =""/>
+               <img src={starGrey} alt =""/>
           </div>
            
 
