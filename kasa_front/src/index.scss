@@ -8,7 +8,10 @@
 @use "./Components/NotFound/NotFound.scss";
 @use "./Components/Tag/Tag.scss";
 @use "./Components/Thumbnail/Thumbnail.scss";
-@use "./Components//Footer//Footer.scss";
+@use "./Components/Footer/Footer.scss";
+@use "./Components//Rating//Rating.scss";
+@use "./Components/Carrousel/Carrousel.scss";
+@use "./Components/Details/Details.scss";
 
 * {
     font-family: 'Montserrat', sans-serif;

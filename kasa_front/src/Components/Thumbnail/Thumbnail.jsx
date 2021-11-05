@@ -16,7 +16,6 @@ class Thumbnail extends React.Component {
             <img src={this.state.cover} alt=""/>
             <p class="thumbnail__title">{this.state.title}</p>
           </div>
-          
         </Link>
       );
     }
