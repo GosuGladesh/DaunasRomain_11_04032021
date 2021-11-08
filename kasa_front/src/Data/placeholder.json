@@ -1,0 +1,21 @@
+{
+    "id": "123456",
+    "title": "Titre du logement",
+    "cover": "",
+    "pictures": [
+        
+    ],
+    "description": "Description du logement",
+    "host": {
+        "name": "John Doe",
+        "picture": ""
+    },
+    "rating": "0",
+    "location": "Région - Ville",
+    "equipments": [
+        
+    ],
+    "tags": [
+        
+    ]
+}

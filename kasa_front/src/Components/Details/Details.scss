@@ -14,12 +14,18 @@
         color : #FF6060;
     }
 
-    &__host {
-        
+    &__host {        
         display: flex;
         
         &__name {
             color : #FF6060;
+        }
+
+        &__picture {
+            border-radius: 50%;
+            overflow: hidden;
+            height: 64px;
+            width: 64px;
         }
     }
 }
