@@ -6,17 +6,27 @@ class Rating extends React.Component {
 
     constructor(props) {
       super(props);
-      this.state = {}
+      this.state = {starRating : []}
     }
 
+    componentDidMount() {
+      let stars = [];
+      let nbStar = parseInt(this.props.rating);
+      let s=0
+      for(s;s < nbStar; s++){
+        stars.push(starColor);
+      }
+      for(s;s< 5;s++){
+        stars.push(starGrey);
+      }      
+      this.setState({starRating : stars})
+    }
     render() {
       return (
           <div className="rating">
-               <img src={starGrey} alt =""/>
-               <img src={starGrey} alt =""/>
-               <img src={starGrey} alt =""/>
-               <img src={starGrey} alt =""/>
-               <img src={starGrey} alt =""/>
+               {this.state.starRating.map( s => {
+                return  <img src={s} alt ="" class="star" />
+               })}
           </div>
            
 

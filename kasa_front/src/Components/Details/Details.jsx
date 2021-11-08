@@ -25,7 +25,7 @@ class Details extends React.Component {
                   {this.props.logement.tags.map(tag => <Tag tag={tag}/>)}
                 </div> 
 
-                <Rating />
+                <Rating rating={this.props.logement.rating}/>
           </div>
            
 

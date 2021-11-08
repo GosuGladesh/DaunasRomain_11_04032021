@@ -12,7 +12,7 @@ class Logement extends React.Component {
       super(props)
       for(let l of JSON.parse(JSON.stringify(logementData))) {
         //if( l.id === this.props.match.params.id){
-        if( l.id === "c67ab8a7"){
+        if( l.id === "b9123946"){
           this.state = {logement : l};
           console.log();
           return;
