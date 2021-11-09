@@ -22,7 +22,7 @@ class Logement extends React.Component {
     render() {
       return (
         <div>
-          <Carrousel/>
+          <Carrousel images={this.state.logement.pictures}/>
           <Details logement={this.state.logement}/>    
         </div>
       );

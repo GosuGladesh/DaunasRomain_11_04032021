@@ -11,6 +11,7 @@ class Details extends React.Component {
     }
 
     render() {
+      let equipementContent = this.props.logement.equipments.map( item => <li>{item}</li>);
       return (
         <div>
           <div class="details">
@@ -31,7 +32,7 @@ class Details extends React.Component {
           </div>
           <div class="dropdown__wrapper">
             <Dropdown title={"Description"} content={this.props.logement.description}/>
-            <Dropdown title={"Equipements"} content={this.props.logement.equipments}/>
+            <Dropdown title={"Equipements"} content={equipementContent}/>
           </div>
         </div>
           

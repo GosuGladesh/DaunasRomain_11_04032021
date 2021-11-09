@@ -201,6 +201,35 @@
   height: 415px;
   background-color: gray;
   margin: 10px auto;
+  position: relative;
+}
+.carrousel__image {
+  width: 1240px;
+  height: 415px;
+}
+.carrousel__button {
+  position: absolute;
+  color: white;
+  background: none;
+  border: none;
+  padding: 0;
+  top: 40%;
+}
+.carrousel__button__previous {
+  left: 20px;
+}
+.carrousel__button__next {
+  right: 20px;
+}
+.carrousel__text {
+  position: absolute;
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  color: white;
 }
 
 .details {
