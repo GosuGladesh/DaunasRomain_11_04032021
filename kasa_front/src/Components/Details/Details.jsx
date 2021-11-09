@@ -1,6 +1,7 @@
 import React from "react";
 import Tag from "../Tag/Tag";
 import Rating from "../Rating/Rating";
+import Dropdown from "../Dropdown/Dropdown";
 
 class Details extends React.Component {
 
@@ -11,6 +12,7 @@ class Details extends React.Component {
 
     render() {
       return (
+        <div>
           <div class="details">
               <div>
                     <h1 class="details__title">{this.props.logement.title}</h1>
@@ -27,6 +29,12 @@ class Details extends React.Component {
 
                 <Rating rating={this.props.logement.rating}/>
           </div>
+          <div class="dropdown__wrapper">
+            <Dropdown title={"Description"} content={this.props.logement.description}/>
+            <Dropdown title={"Equipements"} content={this.props.logement.equipments}/>
+          </div>
+        </div>
+          
            
 
       );

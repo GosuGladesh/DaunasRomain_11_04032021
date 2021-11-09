@@ -11,7 +11,7 @@ class Thumbnail extends React.Component {
 
     render() {
       return (
-        <Link to={"logement:"+this.state.id}>
+        <Link to={"/logement/"+this.state.id}>
           <div class="thumbnail">
             <img src={this.state.cover} alt=""/>
             <p class="thumbnail__title">{this.state.title}</p>

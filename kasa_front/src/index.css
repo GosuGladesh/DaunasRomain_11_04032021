@@ -54,7 +54,6 @@
   text-align: left;
 }
 .dropdown__content {
-  display: none;
   background-color: #F6F6F6;
   border-radius: 10px;
   padding: 15px;
@@ -228,6 +227,11 @@
   overflow: hidden;
   height: 64px;
   width: 64px;
+}
+
+.dropdown__wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 * {
