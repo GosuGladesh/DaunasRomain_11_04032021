@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Home from './Components/Home/Home';
-import About from './Components/About/About'
+import Home from './pages/Home/Home';
+import About from './pages/About/About'
 import Nav from './Components/Nav/Nav';
-import NotFound from './Components/NotFound/NotFound'
-import Logement from './Components/Logement/Logement'
+import NotFound from './pages/NotFound/NotFound'
+import Logement from './pages/Logement/Logement'
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Footer from './Components/Footer/Footer';
@@ -13,8 +13,7 @@ import Footer from './Components/Footer/Footer';
 ReactDOM.render(
   <React.StrictMode>
     
-    <Router>
-      <Nav />
+    <Router>      
       <Switch>
         <Route path="/apropos">
           <About />
@@ -29,7 +28,7 @@ ReactDOM.render(
           <NotFound />
         </Route>
       </Switch>
-      <Footer />
+      
     </Router>
     
   </React.StrictMode>,

@@ -1,10 +1,12 @@
 import React from "react";
 import {withRouter} from "react-router-dom";
-import Details from "../Details/Details";
-import Carrousel from "../Carrousel/Carrousel";
+import Details from "../../Components/Details/Details";
+import Carrousel from "../../Components/Carrousel/Carrousel";
+import Nav from "../../Components/Nav/Nav";
+import Footer from "../../Components/Footer/Footer";
 
-import logementData from "../../Data/logements.json";
-import placeHolder from "../../Data/placeholder.json";
+import logementData from "../../data/logements.json";
+import placeHolder from "../../data/placeholder.json";
 class Logement extends React.Component {
 
     constructor(props) {
@@ -22,8 +24,10 @@ class Logement extends React.Component {
     render() {
       return (
         <div>
+          <Nav />
           <Carrousel images={this.state.logement.pictures}/>
-          <Details logement={this.state.logement}/>    
+          <Details logement={this.state.logement}/>   
+          <Footer /> 
         </div>
       );
     }
