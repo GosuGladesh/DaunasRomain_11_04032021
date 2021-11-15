@@ -1,17 +1,18 @@
-@use "./Components/About/About.scss";
+@use "./pages/About/About.scss";
 @use "./Components/Banner/Banner.scss";
 @use "./Components/Dropdown/Dropdown.scss";
 @use "./Components/Gallery/Gallery.scss";
-@use "./Components/Home/Home.scss";
-@use "./Components/Logement/Logement.scss";
+@use "./pages/Home/Home.scss";
+@use "./pages/Logement/Logement.scss";
 @use "./Components/Nav/Nav.scss";
-@use "./Components/NotFound/NotFound.scss";
+@use "./pages/NotFound/NotFound.scss";
 @use "./Components/Tag/Tag.scss";
 @use "./Components/Thumbnail/Thumbnail.scss";
 @use "./Components/Footer/Footer.scss";
 @use "./Components//Rating//Rating.scss";
 @use "./Components/Carrousel/Carrousel.scss";
 @use "./Components/Details/Details.scss";
+@use "./Components/Host/Host.scss";
 
 * {
     font-family: 'Montserrat', sans-serif;
@@ -27,4 +28,13 @@ h1 {
 
 body {
     margin: 0;
+
+    padding: 50px;
+    @media screen and (max-width: 600px){
+        padding: 10px;
+    }
+}
+
+ul {
+    padding: 0;
 }

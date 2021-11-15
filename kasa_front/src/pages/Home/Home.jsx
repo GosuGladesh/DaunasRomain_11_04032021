@@ -1,5 +1,7 @@
 import React from "react";
 
+import img from "../../img/IMG.png"
+
 import Banner from "../../Components/Banner/Banner";
 import Gallery from "../../Components/Gallery/Gallery"
 import Nav from "../../Components/Nav/Nav";
@@ -10,7 +12,7 @@ class Home extends React.Component {
       return (
         <div>
           <Nav />
-          <Banner />
+          <Banner title="Chez vous, partout et ailleurs" img={img}/>
           <Gallery />
           <Footer />
         </div>

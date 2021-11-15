@@ -5,32 +5,34 @@
     grid-template-rows: 0.5fr 0.5fr; 
     gap: 0px 0px; 
     align-items: center;
+    @media screen and (max-width: 600px){
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       max-width: 350px;
+    }
         
     &__title {
         color : #FF6060;
+        @media screen and (max-width: 600px){
+            font-size: 18pt;
+        }
     }
 
     &__location {
         color : #FF6060;
-    }
-
-    &__host {        
-        display: flex;
-        
-        &__name {
-            color : #FF6060;
+        @media screen and (max-width: 600px){
+            font-size: 14pt;
         }
-
-        &__picture {
-            border-radius: 50%;
-            overflow: hidden;
-            height: 64px;
-            width: 64px;
-        }
-    }
+    } 
 }
 
 .dropdown__wrapper {
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 600px){
+        flex-direction: column;
+        align-items: center;
+     }
 }

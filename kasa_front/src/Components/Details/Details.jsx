@@ -1,5 +1,6 @@
 import React from "react";
 import Tag from "../Tag/Tag";
+import Host from "../Host/Host"
 import Rating from "../Rating/Rating";
 import Dropdown from "../Dropdown/Dropdown";
 
@@ -19,14 +20,11 @@ class Details extends React.Component {
                     <h1 class="details__title">{this.props.logement.title}</h1>
                     <p class="details__location">{this.props.logement.location}</p>
               </div>
-               <div class="details__host">
-                    <p class="details__host__name">{this.props.logement.host.name}</p>
-                    <img class="details__host__picture" alt="" src={this.props.logement.host.picture}/>
-               </div>
+               <Host name={this.props.logement.host.name} picture={this.props.logement.host.picture}/>
                 
-                <div class="tag__container">
-                  {this.props.logement.tags.map(tag => <Tag tag={tag}/>)}
-                </div> 
+              <div class="tag__container">
+                {this.props.logement.tags.map(tag => <Tag tag={tag}/>)}
+              </div> 
 
                 <Rating rating={this.props.logement.rating}/>
           </div>

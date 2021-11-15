@@ -33,10 +33,10 @@ class Carrousel extends React.Component {
     render() {
       return (
           <div class="carrousel">
-                <button onClick={this.previous} class="carrousel__button carrousel__button__previous"><i class="fas fa-angle-left fa-7x"></i></button>
+                <button onClick={this.previous} class="carrousel__button carrousel__button__previous"><i class="fas fa-angle-left "></i></button>
                 <img src={this.state.images[this.state.current]} alt="" class="carrousel__image"/>
                 <p class="carrousel__text">{this.state.current+1}/{this.state.images.length} </p>
-                <button onClick={this.next} class="carrousel__button carrousel__button__next"><i class="fas fa-angle-right fa-7x"></i></button>
+                <button onClick={this.next} class="carrousel__button carrousel__button__next"><i class="fas fa-angle-right "></i></button>
           </div>
            
 

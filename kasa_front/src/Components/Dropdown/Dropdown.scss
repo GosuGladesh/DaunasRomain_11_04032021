@@ -1,6 +1,13 @@
 .dropdown {
     width: 582px;
     position: relative;
+    margin-bottom: 50px;
+   
+
+    @media screen and (max-width: 600px){
+        margin-bottom: 20px;
+        width: 335px;
+    }
 
     &__button {
         display: flex;
@@ -10,16 +17,17 @@
         width: inherit;
         background-color: #FF6060;
         color: white;
-        font-size: 18pt;
-        height: 52px;
+        font-size: 14pt;
+        height: 40px;
         border-radius: 10px;
         border: none;
         text-align: left;
-
+        padding: 0 10px;
        
     }
 
     &__content {
+        color: #FF6060;
         background-color: #F6F6F6;
         border-radius: 10px;
         padding: 15px;

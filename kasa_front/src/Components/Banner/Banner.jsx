@@ -1,15 +1,18 @@
 import React from "react";
-import img from "../../img/IMG.png"
+
 
 
 class Banner extends React.Component {
 
+  constructor(props){
+    super(props);
+  }
 
     render() {
       return (
         <div class="banner__wrapper">
-          <img class="banner" src={img} alt="" />
-          <p class="banner__title">Chez vous, partout et ailleurs</p>
+          <img class="banner" src={this.props.img} alt="" />
+          <p class="banner__title">{this.props.title}</p>
         </div>
         
       );

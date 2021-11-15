@@ -4,10 +4,19 @@
     background-color: gray;
     margin: 10px auto;
     position: relative;
+    @media screen and (max-width: 600px){
+        width: 335px;
+        height: 255px;
+     }
+    
 
     &__image {
         width: 1240px;
         height: 415px;
+        @media screen and (max-width: 600px){
+            width: 335px;
+            height: 255px;
+         }
     }
 
     &__button {
@@ -17,7 +26,11 @@
         border: none;
         padding: 0;
         top: 40%;
+        font-size: 75px;
 
+        @media screen and (max-width: 600px){
+            font-size: 20px;
+         }
         &__previous{
             left: 20px;
         }
@@ -36,5 +49,9 @@
         right: 0;
         bottom: 20px;
         color: white;
+
+        @media screen and (max-width: 600px){
+            font-size: 10pt;
+        }
     }
 }

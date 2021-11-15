@@ -1,0 +1,17 @@
+.details__host {        
+    display: flex;
+    @media screen and (max-width: 600px){
+        order: 4;
+    }
+    
+    &__name {
+        color : #FF6060;
+    }
+
+    &__picture {
+        border-radius: 50%;
+        overflow: hidden;
+        height: 64px;
+        width: 64px;
+    }
+}
