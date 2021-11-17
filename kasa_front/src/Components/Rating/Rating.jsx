@@ -25,7 +25,7 @@ class Rating extends React.Component {
       return (
           <div className="rating">
                {this.state.starRating.map( s => {
-                return  <img src={s} alt ="" class="star" />
+                return  <img src={s} alt ="" className="star" />
                })}
           </div>
            

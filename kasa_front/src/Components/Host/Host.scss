@@ -1,11 +1,13 @@
-.details__host {        
+.details__host {       
     display: flex;
     @media screen and (max-width: 600px){
         order: 4;
     }
     
     &__name {
+        width: 100px;
         color : #FF6060;
+        word-spacing:500px; 
     }
 
     &__picture {

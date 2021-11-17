@@ -362,7 +362,9 @@
   }
 }
 .details__host__name {
+  width: 100px;
   color: #FF6060;
+  word-spacing: 500px;
 }
 .details__host__picture {
   border-radius: 50%;

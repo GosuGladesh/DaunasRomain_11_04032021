@@ -10,7 +10,7 @@ class NotFound extends React.Component {
       return (
         <div>
           <Nav />
-          <div class="notfound">
+          <div className="notfound">
             <img src={logo} alt=""/>
             <p>Oups! La page que vous demandez n'existee pas.</p>
             <a href="/">Retourner sur la page d'accueil</a>

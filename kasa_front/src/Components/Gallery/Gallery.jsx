@@ -26,7 +26,7 @@ class Gallery extends React.Component {
 
     render() {      
       return (
-        <div class="gallery">  
+        <div className="gallery">  
           {this.state.logements.map( logement =>  <Thumbnail key={logement.title} title={logement.title} cover={logement.cover} id={logement.id}/>)}
         </div>
       );

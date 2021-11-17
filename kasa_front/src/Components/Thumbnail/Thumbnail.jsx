@@ -12,9 +12,9 @@ class Thumbnail extends React.Component {
     render() {
       return (
         <Link to={"/logement/"+this.state.id}>
-          <div class="thumbnail">
+          <div className="thumbnail">
             <img src={this.state.cover} alt=""/>
-            <p class="thumbnail__title">{this.state.title}</p>
+            <p className="thumbnail__title">{this.state.title}</p>
           </div>
         </Link>
       );
