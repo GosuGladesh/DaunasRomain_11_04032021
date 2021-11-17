@@ -12,7 +12,7 @@ class Details extends React.Component {
     }
 
     render() {
-      let equipementContent = this.props.logement.equipments.map( item => <li>{item}</li>);
+      let equipementContent = this.props.logement.equipments.map( (item, index) => <li key={index}>{item}</li>);
       return (
         <div>
           <div className="details">
