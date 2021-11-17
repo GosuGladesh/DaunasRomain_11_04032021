@@ -30,8 +30,10 @@ body {
     margin: 0;
 
     padding: 50px;
+    padding-bottom: 0;
     @media screen and (max-width: 600px){
         padding: 10px;
+        padding-bottom: 0;
     }
 }
 

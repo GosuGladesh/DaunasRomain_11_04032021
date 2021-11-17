@@ -18,6 +18,7 @@ class Logement extends React.Component {
           return;
         }
         this.state = {logement : JSON.parse(JSON.stringify(placeHolder))}
+
       }
     }
       

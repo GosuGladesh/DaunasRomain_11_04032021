@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Home from './pages/Home/Home';
 import About from './pages/About/About'
-import Nav from './Components/Nav/Nav';
 import NotFound from './pages/NotFound/NotFound'
 import Logement from './pages/Logement/Logement'
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+
+
 
 ReactDOM.render(
   <React.StrictMode>
@@ -27,7 +28,6 @@ ReactDOM.render(
           <NotFound />
         </Route>
       </Switch>
-      
     </Router>
     
   </React.StrictMode>,

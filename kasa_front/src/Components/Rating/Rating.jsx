@@ -24,7 +24,7 @@ class Rating extends React.Component {
     render() {
       return (
           <div className="rating">
-               {this.state.starRating.map( s => {
+               {this.state.starRating.map( s => {//Generate key for each star
                 return  <img src={s} alt ="" className="star" />
                })}
           </div>
