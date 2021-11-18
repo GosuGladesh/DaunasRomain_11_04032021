@@ -4,6 +4,7 @@ import Details from "../../Components/Details/Details";
 import Carrousel from "../../Components/Carrousel/Carrousel";
 import Nav from "../../Components/Nav/Nav";
 import Footer from "../../Components/Footer/Footer";
+import {Redirect} from "react-router-dom"
 
 import logementData from "../../data/logements.json";
 import placeHolder from "../../data/placeholder.json";
@@ -14,22 +15,25 @@ class Logement extends React.Component {
       for(let l of JSON.parse(JSON.stringify(logementData))) {
         if( l.id === this.props.match.params.id){
           this.state = {logement : l};
-          console.log();
           return;
         }
-        this.state = {logement : JSON.parse(JSON.stringify(placeHolder))}
-
+        this.state = {logement : false}
       }
     }
       
     render() {
       return (
-        <div>
-          <Nav />
-          <Carrousel images={this.state.logement.pictures}/>
-          <Details logement={this.state.logement}/>   
-          <Footer /> 
-        </div>
+        <>
+          {this.state.logement ? 
+          <>
+            <Nav />
+            <Carrousel images={this.state.logement.pictures}/>
+            <Details logement={this.state.logement}/>   
+            <Footer /> 
+          </>
+          :
+          <Redirect to="/"/>} 
+        </>
       );
     }
 }

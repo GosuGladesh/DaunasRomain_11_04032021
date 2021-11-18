@@ -10,12 +10,12 @@ class Home extends React.Component {
 
     render() {
       return (
-        <div>
+        <>
           <Nav />
           <Banner title="Chez vous, partout et ailleurs" img={img}/>
           <Gallery />
           <Footer />
-        </div>
+        </>
       );
     }
   }

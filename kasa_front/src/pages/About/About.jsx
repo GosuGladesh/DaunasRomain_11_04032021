@@ -11,7 +11,7 @@ class About extends React.Component {
 
     render() {
       return (
-        <div>
+        <>
           <Nav />
           <Banner img={img}/>
           <div className="about">
@@ -22,7 +22,7 @@ class About extends React.Component {
           </div>
           
           <Footer />
-        </div>
+        </>
       );
     }
   }

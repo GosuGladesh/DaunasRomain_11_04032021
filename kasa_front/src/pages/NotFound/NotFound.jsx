@@ -8,7 +8,7 @@ class NotFound extends React.Component {
 
     render() {
       return (
-        <div>
+        <>
           <Nav />
           <div className="notfound">
             <img src={logo} alt=""/>
@@ -16,7 +16,7 @@ class NotFound extends React.Component {
             <a href="/">Retourner sur la page d'accueil</a>
           </div>
           <Footer />
-        </div>
+        </>
          
       );
     }

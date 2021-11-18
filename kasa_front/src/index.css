@@ -43,7 +43,8 @@
 }
 
 .dropdown {
-  width: 582px;
+  width: 100%;
+  max-width: 582px;
   position: relative;
   margin-bottom: 50px;
 }
@@ -73,12 +74,13 @@
   background-color: #F6F6F6;
   border-radius: 10px;
   padding: 15px;
+  margin-top: -10px;
 }
 
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  padding: 40px;
+  padding: 30px;
   background-color: #F6F6F6;
   border-radius: 25px;
 }
@@ -222,8 +224,7 @@
   align-items: center;
   justify-content: center;
   height: 209px;
-  margin: 0 -50px;
-  bottom: 0;
+  margin: 0 -80px;
 }
 @media screen and (max-width: 600px) {
   .footer {
@@ -252,7 +253,8 @@
 }
 
 .carrousel {
-  width: 1240px;
+  width: 100%;
+  max-width: 1240px;
   height: 415px;
   background-color: gray;
   margin: 10px auto;
@@ -265,8 +267,10 @@
   }
 }
 .carrousel__image {
-  width: 1240px;
+  width: 100%;
+  max-width: 1240px;
   height: 415px;
+  object-fit: cover;
 }
 @media screen and (max-width: 600px) {
   .carrousel__image {
@@ -387,11 +391,14 @@ h1 {
 
 body {
   margin: 0;
-  padding: 50px;
+  padding: 80px;
+  padding-top: 50px;
+  padding-bottom: 0;
 }
 @media screen and (max-width: 600px) {
   body {
     padding: 10px;
+    padding-bottom: 0;
   }
 }
 

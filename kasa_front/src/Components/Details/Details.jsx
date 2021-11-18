@@ -14,7 +14,7 @@ class Details extends React.Component {
     render() {
       let equipementContent = this.props.logement.equipments.map( (item, index) => <li key={index}>{item}</li>);
       return (
-        <div>
+        <>
           <div className="details">
               <div>
                     <h1 className="details__title">{this.props.logement.title}</h1>
@@ -32,7 +32,7 @@ class Details extends React.Component {
             <Dropdown title={"Description"} content={this.props.logement.description}/>
             <Dropdown title={"Equipements"} content={equipementContent}/>
           </div>
-        </div>
+        </>
           
            
 
