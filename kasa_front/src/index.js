@@ -11,8 +11,7 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 
 ReactDOM.render(
-  <React.StrictMode>
-    
+  <React.StrictMode>    
     <Router>      
       <Switch>
         <Route path="/apropos">

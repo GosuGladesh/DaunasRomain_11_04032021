@@ -9,7 +9,6 @@ class Carrousel extends React.Component {
       this.next = this.next.bind(this);
       this.previous = this.previous.bind(this);
     }
-
     next(){
       this.setState(state => {
         if(this.state.current !== this.state.images.length-1){
@@ -38,8 +37,6 @@ class Carrousel extends React.Component {
                 <p className="carrousel__text">{this.state.current+1}/{this.state.images.length} </p>
                 {this.state.images.length !== 1 ? <button onClick={this.next} className="carrousel__button carrousel__button__next"><i className="fas fa-angle-right "></i></button>: null}
           </div>
-           
-
       );
     }
   }

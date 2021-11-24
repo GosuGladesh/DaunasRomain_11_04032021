@@ -3,6 +3,7 @@
     max-width: 582px;
     position: relative;
     margin-bottom: 50px;
+    margin-right: 20px;
    
 
     @media screen and (max-width: 600px){
@@ -24,6 +25,8 @@
         border: none;
         text-align: left;
         padding: 0 10px;
+        position: relative;
+        z-index: 4;
        
     }
 

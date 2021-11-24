@@ -7,7 +7,6 @@ import Footer from "../../Components/Footer/Footer";
 import {Redirect} from "react-router-dom"
 
 import logementData from "../../data/logements.json";
-import placeHolder from "../../data/placeholder.json";
 class Logement extends React.Component {
 
     constructor(props) {

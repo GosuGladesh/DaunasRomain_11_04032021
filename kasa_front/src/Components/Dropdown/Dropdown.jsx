@@ -18,7 +18,10 @@ class Dropdown extends React.Component {
       
       return (
         <div className="dropdown">
-          <button className="dropdown__button" onClick={this.drop}>{this.props.title} {this.state.dropped ? <i className="fas fa-angle-up"></i> : <i className="fas fa-angle-down"></i>} </button>
+          <button className="dropdown__button" onClick={this.drop}>{this.props.title} {this.state.dropped ?
+           <i className="fas fa-angle-up"></i> 
+           : <i className="fas fa-angle-down"></i>} 
+           </button>
             {this.state.dropped ? <div className="dropdown__content"> <ul>{this.props.content}</ul></div> : null}
         </div>
       );

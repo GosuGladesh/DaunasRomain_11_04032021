@@ -12,15 +12,6 @@ class Gallery extends React.Component {
 
     componentDidMount() {
       //fetch
-      /*
-      fetch("./logements.json")
-        .then(response => response.json())
-        .then(data => {
-          this.setState({logements : data});
-          console.log(this.state.logements);
-          }
-        )
-        */
        this.setState({logements : JSON.parse(JSON.stringify(fecthData))});
     }
 
