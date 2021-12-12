@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../img/LOGO.svg"
+import logo from "../../img/LOGO__WHITE.svg"
 
 class Footer extends React.Component {
 
