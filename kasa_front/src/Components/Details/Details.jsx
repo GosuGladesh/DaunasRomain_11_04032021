@@ -33,9 +33,6 @@ class Details extends React.Component {
             <Dropdown title={"Equipements"} content={equipementContent}/>
           </div>
         </>
-          
-           
-
       );
     }
   }

@@ -31,7 +31,7 @@ class Logement extends React.Component {
             <Footer /> 
           </>
           :
-          <Redirect to="/"/>} 
+          <Redirect to="/*"/>} 
         </>
       );
     }
