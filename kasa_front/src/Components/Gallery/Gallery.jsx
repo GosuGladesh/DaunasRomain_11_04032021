@@ -1,6 +1,6 @@
 import React from "react";
 import Thumbnail from "../Thumbnail/Thumbnail";
-import fecthData from "../../data/logements.json"
+import fecthData from "../../Data/logements.json"
 
 
 class Gallery extends React.Component {

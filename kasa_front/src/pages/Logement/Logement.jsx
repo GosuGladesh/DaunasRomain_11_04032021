@@ -6,7 +6,7 @@ import Nav from "../../Components/Nav/Nav";
 import Footer from "../../Components/Footer/Footer";
 import {Redirect} from "react-router-dom"
 
-import logementData from "../../data/logements.json";
+import logementData from "../../Data/logements.json";
 class Logement extends React.Component {
 
     constructor(props) {
